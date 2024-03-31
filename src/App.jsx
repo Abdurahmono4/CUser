@@ -10,44 +10,7 @@ import NewUserForm from "./components/newuser/NewUserForm";
 import { useState } from "react";
 
 function App() {
-  const [users, setUsers] = useState([
-    {
-      id: 1,
-      imgUrl: "https://picsum.photos/200/300?random=1",
-      firstName: "Rahmonjon",
-      lastName: "Olimjonov",
-      age: 20,
-      job: "Frontend Developer",
-      gender: "male",
-    },
-    {
-      id: 2,
-      imgUrl: "https://picsum.photos/200/300?random=1",
-      firstName: "Rahmonjon",
-      lastName: "Olimjonov",
-      age: 20,
-      job: "Frontend Developer",
-      gender: "male",
-    },
-    {
-      id: 3,
-      imgUrl: "https://picsum.photos/200/300?random=1",
-      firstName: "Rahmonjon",
-      lastName: "Olimjonov",
-      age: 20,
-      job: "Frontend Developer",
-      gender: "male",
-    },
-    {
-      id: 4,
-      imgUrl: "https://picsum.photos/200/300?random=1",
-      firstName: "Rahmonjon",
-      lastName: "Olimjonov",
-      age: 20,
-      job: "Frontend Developer",
-      gender: "male",
-    },
-  ]);
+  const [users, setUsers] = useState([]);
 
   const deleteUser = (id) => {
     setUsers((prev) => {
