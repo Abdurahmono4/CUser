@@ -4,6 +4,7 @@ import { useState } from "react";
 
 function NewUserForm({ addUser }) {
   const [user, setUser] = useState({
+    id: "",
     firstName: "",
     lastName: "",
     age: null,
@@ -11,12 +12,12 @@ function NewUserForm({ addUser }) {
     image: "",
     job: "",
     gender: "",
-    id: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addUser(user);
+    console.log(user);
   };
 
   return (
